@@ -10,6 +10,7 @@ import com.project.mengenalbagiantumbuhan.data.Materi_Data
 import com.project.mengenalbagiantumbuhan.databinding.ActivityMainBinding
 import com.project.mengenalbagiantumbuhan.ui.games.GamesActivity
 import com.project.mengenalbagiantumbuhan.ui.quiz.StartActivity
+import com.project.mengenalbagiantumbuhan.ui.video.VideoActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvMateri: RecyclerView
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.itemCivGames.setOnClickListener {
             val intent = Intent(this, GamesActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.itemCivVideo.setOnClickListener {
+            val intent = Intent(this, VideoActivity::class.java)
             startActivity(intent)
         }
     }
