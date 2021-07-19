@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_detail_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/detail_iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_detail_actionbar"
+            app:layout_constraintBottom_toBottomOf="@id/iv_detail_actionbar"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/detail_tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Detail"
+            style="@style/textactionbar"
+            android:layout_marginStart="10sp"
+            app:layout_constraintStart_toEndOf="@id/detail_iv_back"
+            app:layout_constraintTop_toTopOf="@id/iv_detail_actionbar"
+            app:layout_constraintBottom_toBottomOf="@id/iv_detail_actionbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/detail_tv_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Akar"
+                android:layout_marginTop="20dp"
+                style="@style/textcontentblack"/>
+
+            <TextView
+                android:id="@+id/detail_tv_paragraf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Akar merupakan bagian ..."
+                android:layout_marginTop="10dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_submenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="a. Bagian Akar"
+                android:layout_marginTop="20dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_isimenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Akar merupakan bagian ..."
+                android:layout_marginTop="10dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detail_iv_menu1"
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu1_akar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_submenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="b. Bagian Akar"
+                android:layout_marginTop="20dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_isimenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Akar merupakan bagian ..."
+                android:layout_marginTop="10dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detail_iv_menu2"
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu1_akar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_submenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="c. Bagian Akar"
+                android:layout_marginTop="20dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_isimenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Akar merupakan bagian ..."
+                android:layout_marginTop="10dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detail_iv_menu3"
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu1_akar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi_telah_selesai_silahkan_kembali_ke_menu_utama"
+                android:layout_marginTop="20dp"
+                style="@style/textcontentblack"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_daun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi2_daun"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detail_iv_daun1"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu2_daun2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_bunga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_bunga1"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_bunga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_bunga2"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_bunga3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_bunga3"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_bunga4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_bunga4"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_bunga5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_bunga5"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/detail_btn_next"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/detail_btn_back1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/maroon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/detail_btn_next1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/detail_btn_back2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/maroon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/detail_btn_next2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/detail_btn_back3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12sp"
+        android:backgroundTint="@color/maroon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
