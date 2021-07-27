@@ -10,7 +10,11 @@ object Materi_Data {
         R.drawable.icon_buah,
         R.drawable.icon_bunga,
         R.drawable.icon_biji,
-        R.drawable.icon_dafpus
+        R.drawable.icon_dafpus,
+        R.drawable.icon_kata_pengantar,
+        R.drawable.icon_kd_indikator,
+        R.drawable.icon_peta_konsep,
+        R.drawable.icon_petunjuk_penggunaan
     )
 
     private val TextName = arrayOf(
@@ -20,7 +24,11 @@ object Materi_Data {
         "Buah",
         "Bunga",
         "Biji",
-        "Daftar Pustaka"
+        "Daftar Pustaka",
+        "Kata Pengantar",
+        "KD Indikator",
+        "Peta Konsep",
+        "Petunjuk Penggunaan"
     )
 
     private val paragrafPertama = arrayOf(
@@ -33,7 +41,23 @@ object Materi_Data {
         "1.\tBuku Guru SD/MI Kelas IV Tematik Tema 3 “Peduli Terhadap Makhluk Hidup” tahun 2017\n" +
                 "2.\tBuku Siswa SD/MI Kelas IV Tematik Tema 3 “Peduli Terhadap Makhluk Hidup” tahun 2017\n" +
                 "3.\tKompas.com. 2020. Siswa Kelas IV SD, Ayo Belajar Bentuk dan Fungsi Tumbuhan. Diakses melalui https://www.kompas.com/edu/read/2020/03/31/110924371/siswa-kelas-iv-sd-ayo-belajar-bentuk-dan-fungsi-tumbuhan?page=all.\n" +
-                "4.\tMateri Pertanian. 2021. Pengertian Biji, Macam, Fungsi, Bagian, dan Strukturnya. Diakses melalui https://dosenpertanian.com/pengertian-biji/ \n"
+                "4.\tMateri Pertanian. 2021. Pengertian Biji, Macam, Fungsi, Bagian, dan Strukturnya. Diakses melalui https://dosenpertanian.com/pengertian-biji/ \n",
+        "Bismillahirrahmanirrahim..\n" +
+                "Assalamualaikum wr.wb. \n" +
+                "Puji serta syukur penulis panjatkan kehadirat Allah SWT karena atas rahmat dan hidayah-Nya, penulis dapat menyusun e-book berbasis aplikasi android dengan materi bagian tubuh tumbuhan dan fungsinya untuk siswa kelas IV Sekolah Dasar.\n" +
+                "Adapun penyajian materi pada e-book berbasis aplikasi android ini dikemas secara ringkas dan menarik karena adanya gambar dan video guna menunjang materi. Selain itu, pada e-book berbasis aplikasi android ini juga terdapat menu quiz dan games, sehingga siswa kelas IV dapat berlatih dan bermain.\n" +
+                "Penulis juga menyadari bahwa masih terdapat kekurangan pada aplikasi belajar ini, oleh karenanya dengan senang hati penulis menerima kritik serta saran yang membangun. Melalui aplikasi ini, penulis berharap aplikasi ini dapat dijadikan salah satu sumber belajar yang mudah digunakan kapanpun dan dimanapun baik oleh guru, siswa, calon guru, mahasiswa, dan masyarakat umum, serta dapat menjadi inovasi pendidik dalam memberikan materi pembelajaran.\n" +
+                "Wassalamualaikum wr.wb.\n",
+        "KD: \n" +
+                "3.8.\t Menjelaskan pentingnya upaya keseimbangan pelestarian sumber daya alam di lingkungannya.\n" +
+                "\n" +
+                "\n" +
+                "Indikator:\n" +
+                "1.\tMenjelaskan pengertian tumbuhan\n" +
+                "2.\tMenjelaskan bagian tubuh tumbuhan\n" +
+                "3.\tMenyebutkan fungsi bagian tubuh tumbuhan\n",
+        "0",
+        "0"
     )
 
     private val submenuPertama = arrayOf(
@@ -43,6 +67,10 @@ object Materi_Data {
         "a. Bagian-bagian Buah",
         "a. Bagian-bagian Bunga",
         "a. Fungsi Biji",
+        "0",
+        "0",
+        "0",
+        "0",
         "0"
     )
 
@@ -56,6 +84,10 @@ object Materi_Data {
                 "1.\tJaringan penyimpan cadangan makanan bagi tumbuhan. Cadangan makanan yang disimpan merupakan hasil dari fotosintesis tumbuhan, cadangan makanan tersebut untuk bertahan hidup. \n" +
                 "2.\tSebagai alat perkembangbiakan atau biasa disebut dengan benih.\n" +
                 "3.\tSebagai pembentuk tumbuhan baru.\n",
+        "0",
+        "0",
+        "0",
+        "0",
         "0"
     )
 
@@ -66,7 +98,11 @@ object Materi_Data {
         R.drawable.menu1_buah,
         R.drawable.menu1_bunga,
         0,
-        0
+        0,
+        0,
+        0,
+        R.drawable.peta_konsep,
+        R.drawable.petunjuk_penggunaan
     )
 
     private val submenuKedua = arrayOf(
@@ -75,6 +111,10 @@ object Materi_Data {
         "b. Jenis-jenis Daun",
         "b. Fungsi Buah",
         "b. Fungsi Bunga",
+        "0",
+        "0",
+        "0",
+        "0",
         "0",
         "0"
     )
@@ -88,6 +128,10 @@ object Materi_Data {
         "Biji buah berfungsi sebagai bakal tumbuhan baru, sedangkan daging buah merupakan tempat menyimpan cadangan makanan. Buah yang berwarna mencolok akan menarik hewan untuk memakannya sehingga membantu proses penyebaran biji.",
         "Fungsi bunga bagi tumbuhan adalah sebagai perhiasan tumbuhan dan tempat berlangsungnya perkembangbiakan tumbuhan. Di bunga ada putik dan benang sari. Bunga-bunga terlihat cantik untuk menarik perhatian serangga dan hewan lainnya. Serangga dan hewan yang tertarik pada bunga ini membantu proses penyerbukan pada tumbuhan. Caranya dengan membantu menaruh serbuk sari di bagian putik pada bunga. Setelah putik menerima serbuk sari, nantinya akan tumbuh buah dari bakal biji.",
         "0",
+        "0",
+        "0",
+        "0",
+        "0",
         "0"
     )
 
@@ -98,6 +142,10 @@ object Materi_Data {
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
         0
     )
 
@@ -105,6 +153,10 @@ object Materi_Data {
         "c. Fungsi Akar",
         "c. Fungsi Batang",
         "c. Fungsi Daun",
+        "0",
+        "0",
+        "0",
+        "0",
         "0",
         "0",
         "0",
@@ -126,6 +178,10 @@ object Materi_Data {
         "0",
         "0",
         "0",
+        "0",
+        "0",
+        "0",
+        "0",
         "0"
     )
 
@@ -133,6 +189,10 @@ object Materi_Data {
         R.drawable.menu3_akar,
         R.drawable.menu3_batang,
         R.drawable.menu3_daun,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,

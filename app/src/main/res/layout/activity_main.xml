@@ -21,7 +21,7 @@
     <ImageView
         android:id="@+id/main_iv_card"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="260dp"
         android:src="@drawable/shape_background_blue"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
@@ -33,7 +33,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_icon"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="250dp"
         tools:listitem="@layout/item_icon_main"
         app:layout_constraintTop_toTopOf="@id/main_iv_card"/>
 
@@ -51,7 +51,7 @@
     <FrameLayout
         android:id="@+id/main_iv_lain"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:background="@drawable/shape_background_blue"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
@@ -66,8 +66,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/item_civ_quiz"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/icon_quiz"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -86,8 +86,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/item_civ_games"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/icon_games"
             app:layout_constraintStart_toEndOf="@id/item_civ_quiz"
             app:layout_constraintTop_toTopOf="parent"
@@ -106,8 +106,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/item_civ_video"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/icon_video"
             app:layout_constraintStart_toEndOf="@id/item_civ_games"
             app:layout_constraintTop_toTopOf="parent"

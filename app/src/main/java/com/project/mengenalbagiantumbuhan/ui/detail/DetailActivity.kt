@@ -67,6 +67,30 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnNext.visibility = View.GONE
             }
 
+            if(detailTvJudul.text == "Kata Pengantar"){
+                detailBtnNext.visibility = View.GONE
+            }
+
+            if(detailTvJudul.text == "KD Indikator"){
+                detailBtnNext.visibility = View.GONE
+            }
+
+            if(detailTvJudul.text == "Peta Konsep"){
+                detailBtnNext.visibility = View.GONE
+                detailTvParagraf.visibility = View.GONE
+                detailIvMenu1.visibility = View.VISIBLE
+                detailIvMenu1.layoutParams.height = 1000
+                detailIvMenu1.layoutParams.width = 1000
+            }
+
+            if(detailTvJudul.text == "Petunjuk Penggunaan"){
+                detailBtnNext.visibility = View.GONE
+                detailTvParagraf.visibility = View.GONE
+                detailIvMenu1.visibility = View.VISIBLE
+                detailIvMenu1.layoutParams.height = 1000
+                detailIvMenu1.layoutParams.width = 1000
+            }
+
             detailBtnNext.setOnClickListener {
                 if(detailTvJudul.text == "Bunga"){
                     detailTvBunga1.visibility = View.VISIBLE
