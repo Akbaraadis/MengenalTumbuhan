@@ -39,6 +39,11 @@ class DetailActivity : AppCompatActivity() {
             .apply(RequestOptions().override(280, 280))
             .into(binding.detailIvMenu1)
 
+        Glide.with(this)
+            .load(intent.getIntExtra(MATERI_GAMBARMENU1, 0))
+            .apply(RequestOptions().override(1920, 1080))
+            .into(binding.detailIvMenupeta)
+
         if(MATERI_GAMBARMENU2!="0"){
             Glide.with(this)
                 .load(intent.getIntExtra(MATERI_GAMBARMENU2, 0))
@@ -78,17 +83,16 @@ class DetailActivity : AppCompatActivity() {
             if(detailTvJudul.text == "Peta Konsep"){
                 detailBtnNext.visibility = View.GONE
                 detailTvParagraf.visibility = View.GONE
-                detailIvMenu1.visibility = View.VISIBLE
-                detailIvMenu1.layoutParams.height = 1000
-                detailIvMenu1.layoutParams.width = 1000
+//                detailIvMenu1.visibility = View.VISIBLE
+//                detailIvMenu1.layoutParams.height = 1000
+//                detailIvMenu1.layoutParams.width = 1000
+                detailIvMenupeta.visibility = View.VISIBLE
             }
 
             if(detailTvJudul.text == "Petunjuk Penggunaan"){
                 detailBtnNext.visibility = View.GONE
                 detailTvParagraf.visibility = View.GONE
-                detailIvMenu1.visibility = View.VISIBLE
-                detailIvMenu1.layoutParams.height = 1000
-                detailIvMenu1.layoutParams.width = 1000
+                detailIvMenupeta.visibility = View.VISIBLE
             }
 
             detailBtnNext.setOnClickListener {
