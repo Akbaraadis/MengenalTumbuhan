@@ -14,6 +14,9 @@ import com.project.mengenalbagiantumbuhan.ui.video.VideoActivity
 
 class MainActivity : AppCompatActivity() {
 
+//    Token
+//    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
+
     private var list: ArrayList<Materi> = arrayListOf()
     private lateinit var binding: ActivityMainBinding
 
