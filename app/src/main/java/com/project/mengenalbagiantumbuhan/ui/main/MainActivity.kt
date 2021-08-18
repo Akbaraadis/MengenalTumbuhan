@@ -13,7 +13,7 @@ import com.project.mengenalbagiantumbuhan.ui.quiz.StartActivity
 import com.project.mengenalbagiantumbuhan.ui.video.VideoActivity
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvMateri: RecyclerView
+
     private var list: ArrayList<Materi> = arrayListOf()
     private lateinit var binding: ActivityMainBinding
 
