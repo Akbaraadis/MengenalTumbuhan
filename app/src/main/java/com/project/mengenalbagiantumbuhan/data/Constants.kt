@@ -11,12 +11,12 @@ object Constants{
 
         // 1
         val que1=Question(
-            1, "Tumbuhan hijau dapat membuat segar udara karena menghasilkan...",
+            1, "Tumbuhan terdiri dari beberapa bagian di antaranya…",
             0,
-            "a. Oksigen",
-            "b. Karbondioksida",
-            "c. Air",
-            "d. Kalsium",
+            "a. Akar, Batang, Daun, Bunga, Buah",
+            "b. Akar, Tanah, Daun, Bunga, Buah",
+            "c. Air, Akar, Batang, Daun, Bunga",
+            "d. Air, Tanah, Akar, Batang, Daun",
             1
         )
         questionsList.add(que1)
@@ -313,9 +313,9 @@ object Constants{
         // 31
         val que31 = Question(
             31, "Berdasarkan gambar di bawah, dimanakah letak tempat menyimpan cadangan makanannya?",
-            R.drawable.quiz_31,
-            "a. Batang", "b. Daun",
-            "c. Akar", "d. Bunga", 1
+            R.drawable.quiz_31_rev,
+            "a. 2", "b. 3",
+            "c. 1", "d. 1 dan 3", 1
         )
 
         questionsList.add(que31)
@@ -382,10 +382,10 @@ object Constants{
 
         // 38
         val que38 = Question(
-             38, "Zat hijau yang terdapat pada daun disebut…",
+             38, "Klorofil adalah…",
             0,
-            "a. Kolera", "b. Klorofil",
-            "c. Fotosintesis", "d. Kalium", 2
+            "a. Zat yang terdapat pada akar", "b. Zat berwarna hijau yang terdapat pada daun",
+            "c. Zat berwarna hijau yang terdapat pada batang", "d. Zat berwarna yang terdapat pada bunga", 2
         )
 
         questionsList.add(que38)

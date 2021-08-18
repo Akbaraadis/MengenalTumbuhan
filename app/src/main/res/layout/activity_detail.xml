@@ -61,8 +61,8 @@
                 android:layout_height="wrap_content"
                 tools:text="Akar"
                 android:layout_marginTop="20dp"
-                style="@style/textcontentblack"/>
-
+                style="@style/textcontentheadblack"/>
+s
             <TextView
                 android:id="@+id/detail_tv_paragraf"
                 android:layout_width="wrap_content"
@@ -135,6 +135,16 @@
 
             <ImageView
                 android:visibility="gone"
+                android:id="@+id/detail_iv_batang2"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu2_batang"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:visibility="gone"
                 android:id="@+id/detail_iv_menu2"
                 android:layout_width="250dp"
                 android:layout_height="220dp"
@@ -200,6 +210,26 @@
                 android:layout_height="180dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/menu2_daun2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/detail_tv_batang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/materi1_batang"
+                style="@style/textcontentblack"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detail_iv_batang1"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu1_batang2"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"/>
 

@@ -45,10 +45,18 @@ class DetailActivity : AppCompatActivity() {
             .into(binding.detailIvMenupeta)
 
         if(MATERI_GAMBARMENU2!="0"){
-            Glide.with(this)
-                .load(intent.getIntExtra(MATERI_GAMBARMENU2, 0))
-                .apply(RequestOptions().override(280, 280))
-                .into(binding.detailIvMenu2)
+            if(binding.detailTvJudul.text == "Batang"){
+                Glide.with(this)
+                    .load(intent.getIntExtra(MATERI_GAMBARMENU2, 0))
+                    .apply(RequestOptions().override(280, 120))
+                    .into(binding.detailIvMenu2)
+            }
+            else{
+                Glide.with(this)
+                    .load(intent.getIntExtra(MATERI_GAMBARMENU2, 0))
+                    .apply(RequestOptions().override(280, 280))
+                    .into(binding.detailIvMenu2)
+            }
         }
 
         if(MATERI_GAMBARMENU3!="0"){
@@ -67,6 +75,10 @@ class DetailActivity : AppCompatActivity() {
             detailTvIsimenu2.text = intent.getStringExtra(MATERI_ISIMENU2)
             detailTvSubmenu3.text = intent.getStringExtra(MATERI_SUBMENU3)
             detailTvIsimenu3.text = intent.getStringExtra(MATERI_ISIMENU3)
+
+            if(detailTvJudul.text == "Biji"){
+                detailIvMenu1.visibility = View.VISIBLE
+            }
 
             if(detailTvJudul.text == "Daftar Pustaka"){
                 detailBtnNext.visibility = View.GONE
@@ -104,6 +116,13 @@ class DetailActivity : AppCompatActivity() {
                     detailTvBunga5.visibility = View.VISIBLE
                 }
                 if(detailTvJudul.text == "Biji"){
+                    detailIvMenu1.visibility = View.GONE
+                }
+                if (detailTvJudul.text == "Batang"){
+                    detailTvBatang1.visibility = View.VISIBLE
+                    detailIvBatang1.visibility = View.VISIBLE
+                }
+                if(detailTvJudul.text == "Biji"){
                     detailTvJudul.visibility = View.GONE
                     detailTvParagraf.visibility = View.GONE
                     detailTvSubmenu1.visibility = View.VISIBLE
@@ -132,12 +151,19 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnBack1.visibility = View.GONE
                 detailBtnNext.visibility = View.VISIBLE
                 detailBtnNext1.visibility = View.GONE
+                if(detailTvJudul.text == "Biji"){
+                    detailIvMenu1.visibility = View.VISIBLE
+                }
                 if(detailTvJudul.text == "Bunga"){
                     detailTvBunga1.visibility = View.GONE
                     detailTvBunga2.visibility = View.GONE
                     detailTvBunga3.visibility = View.GONE
                     detailTvBunga4.visibility = View.GONE
                     detailTvBunga5.visibility = View.GONE
+                }
+                if (detailTvJudul.text == "Batang"){
+                    detailTvBatang1.visibility = View.GONE
+                    detailIvBatang1.visibility = View.GONE
                 }
             }
 
@@ -152,12 +178,18 @@ class DetailActivity : AppCompatActivity() {
                 detailIvMenu1.visibility = View.GONE
                 detailTvSubmenu2.visibility = View.VISIBLE
                 detailTvIsimenu2.visibility = View.VISIBLE
-                if (detailTvJudul.text == "Akar" || detailTvJudul.text == "Daun"){
+                if (detailTvJudul.text == "Akar" || detailTvJudul.text == "Daun" || detailTvJudul.text == "Batang"){
                     detailIvMenu2.visibility = View.VISIBLE
                 }
                 if (detailTvJudul.text == "Daun"){
                     detailTvDaun1.visibility = View.VISIBLE
                     detailIvDaun1.visibility = View.VISIBLE
+                }
+                if (detailTvJudul.text == "Batang"){
+                    detailTvBatang1.visibility = View.GONE
+                    detailIvBatang1.visibility = View.GONE
+                    detailIvBatang2.visibility = View.VISIBLE
+                    detailIvMenu2.visibility = View.GONE
                 }
                 if(detailTvJudul.text == "Bunga" || detailTvJudul.text == "Buah"){
                     detailBtnBack1.visibility = View.GONE
@@ -180,12 +212,17 @@ class DetailActivity : AppCompatActivity() {
                     detailTvBunga4.visibility = View.VISIBLE
                     detailTvBunga5.visibility = View.VISIBLE
                 }
+                if (detailTvJudul.text == "Batang"){
+                    detailTvBatang1.visibility = View.VISIBLE
+                    detailIvBatang1.visibility = View.VISIBLE
+                    detailIvBatang2.visibility = View.GONE
+                }
                 detailTvSubmenu1.visibility = View.VISIBLE
                 detailTvIsimenu1.visibility = View.VISIBLE
                 detailIvMenu1.visibility = View.VISIBLE
                 detailTvSubmenu2.visibility = View.GONE
                 detailTvIsimenu2.visibility = View.GONE
-                if (detailTvJudul.text == "Akar" || detailTvJudul.text == "Daun"){
+                if (detailTvJudul.text == "Akar" || detailTvJudul.text == "Daun" || detailTvJudul.text == "Batang"){
                     detailIvMenu2.visibility = View.GONE
                 }
                 if (detailTvJudul.text == "Daun"){
@@ -210,6 +247,7 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnNext2.visibility = View.GONE
                 detailBtnBack2.visibility = View.GONE
                 detailBtnBack3.visibility = View.VISIBLE
+                detailIvBatang2.visibility = View.GONE
             }
 
             detailBtnBack3.setOnClickListener {
@@ -225,6 +263,10 @@ class DetailActivity : AppCompatActivity() {
                 if(detailTvJudul.text == "Daun"){
                     detailTvDaun1.visibility = View.VISIBLE
                     detailIvDaun1.visibility = View.VISIBLE
+                }
+                if(detailTvJudul.text == "Batang"){
+                    detailIvBatang2.visibility = View.VISIBLE
+                    detailIvMenu2.visibility = View.GONE
                 }
             }
 

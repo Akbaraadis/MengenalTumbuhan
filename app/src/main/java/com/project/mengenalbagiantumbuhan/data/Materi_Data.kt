@@ -35,13 +35,15 @@ object Materi_Data {
         "Akar  adalah  bagian  tumbuhan  yang  menghubungkan  bagian  tubuh tanaman dengan tanah atau media tempat tanaman tersebut tumbuh. Akar umumnya tumbuh ke bawah tanah searah dengan gaya gravitasi bumi.",
         "Batang adalah bagian tanaman yang menempel pada akar dan berada di atas permukaan tanah. Arah pertumbuhan batang berlawanan dengan akar. Umumnya batang tumbuh mengikuti arah sinar matahari. Batang merupakan bagian tanaman tempat keluar dan menempelnya bagian daun, bunga, dan buah. Beberapa jenis tanaman memiliki batang yang bercabang dan beberapa jenis lainnya tidak. Beberapa jenis tanaman juga memiliki batang yang berkayu dan beberapa jenis yang lainnya tidak.",
         "Daun adalah bagian dari tumbuhan yang berfungsi memasak makanan dan pada umumnya memberikan warna hijau yang cukup dominan pada tumbuhan. Daun tumbuh dan menempel pada bagian batang pohon.",
-        "Buah adalah bagian tumbuhan yang merupakan perkembangan dari bunga.",
-        "Struktur tumbuhan yang terakhir adalah bunga. Bunga berperan sebagai organ reproduksi pada tanaman. ",
-        "Biji merupakan hasil dari pembuahan yang terjadi akibat penyerbukan antara serbuk sari dan sel telur pada putik. Jika biji ditanam akan tumbuh menjadi tumbuhan baru. Biji memiliki keping. Biji ada yang berkeping satu dan ada yang berkeping dua. Biji berkeping satu disebut monokotil dan biji berkeping dua disebut dikotil. Biji penting mempertahankan kelestarian tumbuhannya.",
+        "Bagi tumbuhan yang berkembang biak dengan biji didahului dengan pembentukan bunga. Bunga memiliki fungsi sebagai tempat penyerbukan dan pembuahan. Hasil penyerbukan dan pembuahan bunga itulah yang nantinya menghasilkan atau membentuk buah. Maka buah adalah bagian tumbuhan yang merupakan perkembangan dari bunga.",
+        "Struktur tumbuhan yang selanjutnya adalah bunga. Sebelum suatu tumbuhan mati, biasanya dihasilkan suatu alat yang nantinya dapat menggantikannya menjadi tumbuhan baru. Alat-alat yang demikian dinamakan alat-alat perkembangbiakan. Nah bunga berperan sebagai organ reproduksi pada tanaman.",
+        "Biji merupakan hasil dari pembuahan yang terjadi akibat penyerbukan antara serbuk sari dan sel telur pada putik. Jika biji ditanam, akan tumbuh menjadi tumbuhan baru. Biji memiliki keping. Biji ada yang berkeping satu dan ada yang berkeping dua. Biji berkeping satu disebut monokotil dan biji berkeping dua disebut dikotil. Biji penting mempertahankan kelestarian tumbuhannya.",
         "1.\tBuku Guru SD/MI Kelas IV Tematik Tema 3 “Peduli Terhadap Makhluk Hidup” tahun 2017\n" +
                 "2.\tBuku Siswa SD/MI Kelas IV Tematik Tema 3 “Peduli Terhadap Makhluk Hidup” tahun 2017\n" +
                 "3.\tKompas.com. 2020. Siswa Kelas IV SD, Ayo Belajar Bentuk dan Fungsi Tumbuhan. Diakses melalui https://www.kompas.com/edu/read/2020/03/31/110924371/siswa-kelas-iv-sd-ayo-belajar-bentuk-dan-fungsi-tumbuhan?page=all.\n" +
-                "4.\tMateri Pertanian. 2021. Pengertian Biji, Macam, Fungsi, Bagian, dan Strukturnya. Diakses melalui https://dosenpertanian.com/pengertian-biji/ \n",
+                "4.\tMateri Pertanian. 2021. Pengertian Biji, Macam, Fungsi, Bagian, dan Strukturnya. Diakses melalui https://dosenpertanian.com/pengertian-biji/ \n" +
+                "5.\thttp://repository.uki.ac.id/195/1/MORFOLOGI%20TUMBUHAN.pdf\n" +
+                "6.\tBu Guru. 2021. Fungsi Biji. Diakses melalui https://materi.co.id/biji/ \n",
         "Bismillahirrahmanirrahim..\n" +
                 "Assalamualaikum wr.wb. \n" +
                 "Puji serta syukur penulis panjatkan kehadirat Allah SWT karena atas rahmat dan hidayah-Nya, penulis dapat menyusun e-book berbasis aplikasi android dengan materi bagian tubuh tumbuhan dan fungsinya untuk siswa kelas IV Sekolah Dasar.\n" +
@@ -99,7 +101,7 @@ object Materi_Data {
         R.drawable.menu1_daun,
         R.drawable.menu1_buah,
         R.drawable.menu1_bunga,
-        0,
+        R.drawable.menu1_biji,
         0,
         0,
         0,
@@ -125,11 +127,14 @@ object Materi_Data {
         "Akar dapat digolongkan ke dalam dua jenis, yaitu akar serabut dan akar tunggang. Akar serabut berbentuk serabut berukuran kecil-kecil. Akar serabut tidak memiliki akar utama sehingga ukuran akar yang satu dengan yang lainnya relatif sama. Tanaman yang memiliki akar serabut umumnya merupakan golongan monokotil (biji berkeping satu). Contoh tanaman yang berakar serabut adalah padi, pohon kelapa, dan rumput-rumputan.\n" +
                 "\n" + "Sementara itu, akar tunggang terdiri dari satu akar induk berukuran cukup besar. Pada bagian akar induk, tumbuh akar-akar cabang dengan ukuran yang lebih kecil. Tanaman yang memiliki akar tunggang umumnya merupakan golongan dikotil (biji berkeping dua). Contoh tanaman yang berakar tunggang adalah pohon mangga, jambu, dan jeruk.\n" +
                 "\n" + "Selain akar serabut dan akar tunggang, terdapat beberapa jenis akar khusus, yaitu akar tunjang (pandan), akar gantung (beringin), akar hisap (benalu), akar lekat (sirih), dan umbi akar (singkong).\n",
-        "Berdasarkan kambiumnya, terdapat batang yang berkambium dan batang yang tidak berkambium. Contoh tanaman yang memiliki batang ber-kambium adalah mangga. \n" +
-                "\n" + "Sementara itu, contoh tanaman yang batangnya tidak berkambium adalah kelapa. Batang tanaman dapat pula dibedakan berdasarkan bentuknya, yaitu batang berkayu seperti pada jambu, batang basah seperti pada bayam, dan batang rumput seperti pada padi.",
+        "Berdasarkan kambiumnya, terdapat batang yang berkambium dan batang yang tidak berkambium. Contoh tanaman yang memiliki batang berkambium adalah mangga. Sementara itu, contoh tanaman yang batangnya tidak berkambium adalah kelapa. \n" +
+                "\n" + "Batang tanaman dapat pula dibedakan berdasarkan bentuknya, yaitu batang berkayu dengan ciri-ciri kuat dan keras, seperti pada jambu. Batang basah dengan ciri-ciri lunak dan berair, seperti pada bayam. Dan batang rumput dengan ciri-ciri tidak keras, punya ruas-ruas yang nyata, sering berongga, contohnya seperti pada padi.\n",
         "Berdasarkan bentuk tulang daunnya, daun dibedakan menjadi daun bertulang daun menyirip, menjari, melengkung, dan sejajar. \n" +
                 "\n" + "Contoh daun menyirip adalah daun mangga. Contoh daun menjari adalah daun pepaya. Contoh daun melengkung adalah daun sirih. Contoh daun sejajar adalah daun jagung.",
-        "Biji buah berfungsi sebagai bakal tumbuhan baru, sedangkan daging buah merupakan tempat menyimpan cadangan makanan. Buah yang berwarna mencolok akan menarik hewan untuk memakannya sehingga membantu proses penyebaran biji.",
+        "Fungsi buah ialah tempat penyimpanan cadangan makanan, membungkus dan melindungi biji. Buah memiliki bagian-bagian yang masing-masing bagian memiliki fungsi, di antaranya:\n" +
+                "a.\tBiji buah berfungsi sebagai bakal tumbuhan baru, \n" +
+                "b.\tSedangkan daging buah merupakan tempat menyimpan cadangan makanan. \n" +
+                "Buah yang berwarna mencolok akan menarik hewan untuk memakannya.\n",
         "Fungsi bunga bagi tumbuhan adalah sebagai perhiasan tumbuhan dan tempat berlangsungnya perkembangbiakan tumbuhan. Di bunga ada putik dan benang sari. Bunga-bunga terlihat cantik untuk menarik perhatian serangga dan hewan lainnya. Serangga dan hewan yang tertarik pada bunga ini membantu proses penyerbukan pada tumbuhan. Caranya dengan membantu menaruh serbuk sari di bagian putik pada bunga. Setelah putik menerima serbuk sari, nantinya akan tumbuh buah dari bakal biji.",
         "0",
         "0",

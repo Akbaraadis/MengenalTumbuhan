@@ -8,6 +8,7 @@
 
     <ImageView
         android:id="@+id/icon_tut_wuri"
+        android:visibility="gone"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/icon_tut_wuri"

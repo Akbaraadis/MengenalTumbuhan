@@ -10,4 +10,6 @@
     <string name="materi2_daun">Selain dibedakan berdasarkan bentuk pertulang daunnya, daun juga dibedakan berdasarkan jumlah helai daun pada setiap tangkainya, yaitu daun tunggal dan majemuk. \n\nDaun tunggal adalah daun yang berjumlah satu helai dalam setiap tangkainya, contohnya daun jambu. Daun majemuk adalah daun yang terdiri dari beberapa helai dalam setiap tangkainya, contohnya daun putri malu.</string>
     <string name="materi_telah_selesai_silahkan_kembali_ke_menu_utama">Materi telah selesai, silahkan kembali ke menu utama</string>
     <string name="lainnya">Lainnya</string>
+    <string name="materi1_batang">Pada batang, terdapat buku-buku batang dan ruas. Buku batang adalah tempat melekat/duduk daun. Sedangkan ruas batang adalah jarak antar buku-buku. Seperti pada gambar berikut ini:</string>
+    <string name="buah">"<b>" + buah + "</b>"</string>
 </resources>
