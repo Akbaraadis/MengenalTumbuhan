@@ -9,6 +9,7 @@ import com.project.mengenalbagiantumbuhan.data.Materi
 import com.project.mengenalbagiantumbuhan.data.Materi_Data
 import com.project.mengenalbagiantumbuhan.databinding.ActivityMainBinding
 import com.project.mengenalbagiantumbuhan.ui.games.GamesActivity
+import com.project.mengenalbagiantumbuhan.ui.latihan.LatihanActivity
 import com.project.mengenalbagiantumbuhan.ui.quiz.StartActivity
 import com.project.mengenalbagiantumbuhan.ui.video.VideoActivity
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         showRecyclerView()
 
         binding.itemCivQuiz.setOnClickListener{
-            val intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(this, LatihanActivity::class.java)
             startActivity(intent)
         }
 
