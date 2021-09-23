@@ -13,7 +13,6 @@ import com.project.mengenalbagiantumbuhan.databinding.ActivityQuizBinding
 class LatihanActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLatihanBinding
-    private var mCurrentPosition: Int = 2
     private var mCorrectAnswers: Int = 0
     var jawaban1 = ""
     var jawaban2 = ""
@@ -21,18 +20,24 @@ class LatihanActivity : AppCompatActivity() {
     var jawaban4 = ""
     var jawaban5 = ""
 
+//    companion object {
+//        const val mCurrentPosition = "extra_icon"
+//    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLatihanBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        val mCurrentPosition = intent.getStringExtra("data")
+
         binding.latihanIvBack.setOnClickListener {
             onBackPressed()
             finish()
         }
 
-        if (mCurrentPosition == 1){
+        if (mCurrentPosition == "1"){
             with(binding){
                 latihanTvSoal1.text = SoalAkar[0]
                 latihanTvSoal2.text = SoalAkar[1]
@@ -46,7 +51,7 @@ class LatihanActivity : AppCompatActivity() {
                 jawaban5 = JawabAkar[4]
             }
         }
-        else if (mCurrentPosition == 2){
+        else if (mCurrentPosition == "2"){
             with(binding){
                 latihanTvSoal1.text = SoalBatang[0]
                 latihanTvSoal2.text = SoalBatang[1]
@@ -60,7 +65,7 @@ class LatihanActivity : AppCompatActivity() {
                 jawaban5 = JawabBatang[4]
             }
         }
-        else if (mCurrentPosition == 3){
+        else if (mCurrentPosition == "3"){
             with(binding){
                 latihanTvSoal1.text = SoalDaun[0]
                 latihanTvSoal2.text = SoalDaun[1]
@@ -75,7 +80,7 @@ class LatihanActivity : AppCompatActivity() {
 
             }
         }
-        else if (mCurrentPosition == 4){
+        else if (mCurrentPosition == "4"){
             with(binding){
                 latihanTvSoal1.text = SoalBuah[0]
                 latihanTvSoal2.text = SoalBuah[1]
@@ -89,7 +94,7 @@ class LatihanActivity : AppCompatActivity() {
                 jawaban5 = JawabBuah[4]
             }
         }
-        else if (mCurrentPosition == 5){
+        else if (mCurrentPosition == "5"){
             with(binding){
                 latihanTvSoal1.text = SoalBunga[0]
                 latihanTvSoal2.text = SoalBunga[1]
@@ -120,29 +125,29 @@ class LatihanActivity : AppCompatActivity() {
 
         with(binding){
             latihanBtnCheck.setOnClickListener {
-                if (latihanEtSoal1.text.toString() == jawaban1){
+                if (latihanEtSoal1.text.toString().toLowerCase() == jawaban1){
                     mCorrectAnswers++
                 }
-                if (latihanEtSoal2.text.toString() == jawaban2){
-                    mCorrectAnswers++
-                }
-
-                if (latihanEtSoal3.text.toString() == jawaban3 || latihanEtSoal3.text.toString() == "duduk daun" || latihanEtSoal3.text.toString() == "tajuk bunga"){
+                if (latihanEtSoal2.text.toString().toLowerCase() == jawaban2){
                     mCorrectAnswers++
                 }
 
-                if (latihanEtSoal4.text.toString() == jawaban4 || latihanEtSoal4.text.toString() == "biji berkeping dua"){
+                if (latihanEtSoal3.text.toString().toLowerCase() == jawaban3 || latihanEtSoal3.text.toString() == "duduk daun" || latihanEtSoal3.text.toString() == "tajuk bunga"){
                     mCorrectAnswers++
                 }
 
-                if (latihanEtSoal5.text.toString() == jawaban5 || latihanEtSoal5.text.toString() == "umbi-umbian" || latihanEtSoal5.text.toString() == "sebagai tempat membuat makanan"){
+                if (latihanEtSoal4.text.toString().toLowerCase() == jawaban4 || latihanEtSoal4.text.toString() == "biji berkeping dua"){
+                    mCorrectAnswers++
+                }
+
+                if (latihanEtSoal5.text.toString().toLowerCase() == jawaban5 || latihanEtSoal5.text.toString() == "umbi-umbian" || latihanEtSoal5.text.toString() == "sebagai tempat membuat makanan"){
                     mCorrectAnswers++
                 }
 
                 latihanScroll.visibility = View.GONE
                 latihanTextNilai.visibility = View.VISIBLE
                 latihanTextNilai2.visibility = View.VISIBLE
-                latihanTextNilai2.text = mCorrectAnswers.toString()
+                latihanTextNilai2.text = (mCorrectAnswers*20).toString()
                 latihanBtnCheck.visibility = View.GONE
 
             }

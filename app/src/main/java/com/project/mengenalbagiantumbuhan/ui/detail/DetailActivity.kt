@@ -1,5 +1,6 @@
 package com.project.mengenalbagiantumbuhan.ui.detail
 
+import android.content.Intent
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +9,12 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.project.mengenalbagiantumbuhan.R
 import com.project.mengenalbagiantumbuhan.databinding.ActivityDetailBinding
+import com.project.mengenalbagiantumbuhan.ui.latihan.LatihanActivity
 
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
+    private lateinit var flag: String
 
     companion object {
         const val MATERI_JUDUL = "extra_icon"
@@ -117,6 +120,7 @@ class DetailActivity : AppCompatActivity() {
                 }
                 if(detailTvJudul.text == "Biji"){
                     detailIvMenu1.visibility = View.GONE
+                    detailBtnLatihan.visibility = View.VISIBLE
                 }
                 if (detailTvJudul.text == "Batang"){
                     detailTvBatang1.visibility = View.VISIBLE
@@ -151,6 +155,7 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnBack1.visibility = View.GONE
                 detailBtnNext.visibility = View.VISIBLE
                 detailBtnNext1.visibility = View.GONE
+                detailBtnLatihan.visibility = View.GONE
                 if(detailTvJudul.text == "Biji"){
                     detailIvMenu1.visibility = View.VISIBLE
                 }
@@ -195,6 +200,7 @@ class DetailActivity : AppCompatActivity() {
                     detailBtnBack1.visibility = View.GONE
                     detailBtnBack2.visibility = View.VISIBLE
                     detailBtnNext1.visibility = View.GONE
+                    detailBtnLatihan.visibility = View.VISIBLE
                 }
                 else{
                     detailBtnBack1.visibility = View.GONE
@@ -222,6 +228,7 @@ class DetailActivity : AppCompatActivity() {
                 detailIvMenu1.visibility = View.VISIBLE
                 detailTvSubmenu2.visibility = View.GONE
                 detailTvIsimenu2.visibility = View.GONE
+                detailBtnLatihan.visibility = View.GONE
                 if (detailTvJudul.text == "Akar" || detailTvJudul.text == "Daun" || detailTvJudul.text == "Batang"){
                     detailIvMenu2.visibility = View.GONE
                 }
@@ -248,6 +255,7 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnBack2.visibility = View.GONE
                 detailBtnBack3.visibility = View.VISIBLE
                 detailIvBatang2.visibility = View.GONE
+                detailBtnLatihan.visibility = View.VISIBLE
             }
 
             detailBtnBack3.setOnClickListener {
@@ -260,6 +268,7 @@ class DetailActivity : AppCompatActivity() {
                 detailBtnBack3.visibility = View.GONE
                 detailBtnBack2.visibility = View.VISIBLE
                 detailBtnNext2.visibility = View.VISIBLE
+                detailBtnLatihan.visibility = View.GONE
                 if(detailTvJudul.text == "Daun"){
                     detailTvDaun1.visibility = View.VISIBLE
                     detailIvDaun1.visibility = View.VISIBLE
@@ -268,6 +277,25 @@ class DetailActivity : AppCompatActivity() {
                     detailIvBatang2.visibility = View.VISIBLE
                     detailIvMenu2.visibility = View.GONE
                 }
+            }
+
+            detailBtnLatihan.setOnClickListener {
+                val intentShoes = Intent(this@DetailActivity, LatihanActivity::class.java)
+                if (detailTvJudul.text == "Akar") {
+                    flag = "1"
+                }else if(detailTvJudul.text == "Batang"){
+                    flag = "2"
+                }else if(detailTvJudul.text == "Daun"){
+                    flag = "3"
+                }else if(detailTvJudul.text == "Buah"){
+                    flag = "4"
+                }else if(detailTvJudul.text == "Bunga"){
+                    flag = "5"
+                }else{
+                    flag = "6"
+                }
+                intentShoes.putExtra("data", flag.toString())
+                startActivity(intentShoes)
             }
 
             detailIvBack.setOnClickListener {
